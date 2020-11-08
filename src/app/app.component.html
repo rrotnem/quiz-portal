@@ -1,0 +1,40 @@
+
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="masthead mb-auto">
+        <div class="inner">
+            <h3 class="masthead-brand">Test Portal</h3>
+            <h3 *ngIf="!isStart">Testing ....</h3>
+            <nav *ngIf="isStart; else goback" class="nav nav-masthead justify-content-center">
+                <a class="nav-link" href="#">Questions?</a>           
+
+            </nav>
+            <ng-template #goback><nav class="nav nav-masthead justify-content-center">
+             
+                <a class="nav-link" (click)="goBack()" href="#">Go Back</a>
+
+            </nav></ng-template>
+            
+        </div>
+    </header>
+
+    <main role="main" class="inner cover">
+        <div *ngIf="isStart">
+            <h1 class="cover-heading">Bootstrap Test</h1>
+            <br>
+
+            <p class="card mt-8">
+           <a  routerLink='quizwindow' (click)="start()" class="btn btn-lg btn-secondary">Start</a>
+            </p>
+        </div>
+        <div *ngIf="!isStart" class="text-left">
+            <router-outlet></router-outlet>
+        </div>
+    </main>
+
+    <footer class="mastfoot mt-auto">
+        <div class="inner">
+            <p>Interview Test Cover by <a href="https://getbootstrap.com/">Test Center</a>, by <a href="#">@Rose
+                    Rotnem</a>.</p>
+        </div>
+    </footer>
+</div>

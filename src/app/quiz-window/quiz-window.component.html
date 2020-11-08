@@ -1,0 +1,133 @@
+<h1 class="cover-heading text-center">Bootstrap Test</h1>
+<div *ngIf="hide" class="bg-light text-dark">
+  <h1 class="text-center"><span><font color="red">{{timer.min}} : {{timer.sec}}</font></span></h1>
+
+  <div class="card-header">
+    Question {{id}}/10:
+    <p>{{question}}</p>
+  </div>
+  <div class="card-body">
+
+    <div>
+      <form #userRef="ngForm" (ngSubmit)="checkAnswer(userRef.value)"  novalidate>      
+          <div class="form-check">
+            <input class="form-check-input" type="radio" ngModel [checked]="checked" (change)="onChange()" name="option" value="A">
+            <label class="form-check-label" >{{options.A}}</label>
+          </div>
+          <div class=" form-check ">
+            <input class="form-check-input" type="radio" ngModel [checked]="checked" (change)="onChange()" name="option" value="B">
+            <label class="form-check-label" for="inlineCheckbox2">{{options.B}}</label>
+          </div>
+     
+     
+        <div class="form-check ">
+          <input class="form-check-input" type="radio" ngModel [checked]="checked" (change)="onChange()" name="option" value="C">
+          <label class="form-check-label" for="inlineCheckbox3">{{options.C}}</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" ngModel [checked]="checked"  (change)="onChange()" name="option" value="D">
+          <label class="form-check-label" for="inlineCheckbox3">{{options.D}}</label>
+        </div>
+        
+    
+        <div class="form-check text-center">
+          <input class="btn btn-secondary" type="submit" [disabled]="!checked"  value="Check">
+
+        </div>
+
+
+      </form>
+      <!-- form value: {login: ''} -->
+
+
+
+
+      <br>
+    </div>
+    <!-- <form #userRef="ngForm" (ngSubmit)="checkLogin(userRef.value)" novalidate>
+      <label>Username </label><input type="text" name="uname" minlength="2" ngModel required 
+      #nameRef="ngModel" /><br>
+      <div *ngIf="nameRef.errors && (nameRef.dirty || nameRef.touched)">
+          <span [hidden]="!nameRef.errors.required">
+              <font color="red">Username is required.</font>
+          </span>
+          <span [hidden]="!nameRef.errors.minlength">
+              <font color="red">Username is required minlength 2.</font>
+          </span>
+
+      </div>
+
+      <label>Password </label>
+      <input type="password" name="pname" ngModel required 
+      #passRef="ngModel" pattern="\d{3}@\D{2}" /><br>
+
+      <div *ngIf="passRef.errors && (passRef.dirty || passRef.touched)">
+          <span [hidden]="!passRef.errors.required">
+              <font color="red">Password is required.</font>
+          </span>
+          <span [hidden]="!passRef.errors.pattern">
+              <font color="red">Please enter correct email format 123@AB.</font>
+          </span>
+
+      </div>
+
+
+      <input type="submit" value="submit" [disabled]="!userRef.valid" />
+  </form> -->
+    <!-- 
+    <table>
+      <tr>
+          <th>id</th>
+          <th>question</th>
+          <th>options</th>
+          <th>answer</th>
+      </tr>
+      <tr *ngFor="let data of datas">
+          <td>{{data.id}}</td>
+          <td>{{data.question}}</td>
+          <td><div *ngFor="let option of data.options">
+            <p>{{option.A}}</p>
+            <p>{{option.B}}</p>
+            <p>{{option.C}}</p>
+            <p>{{option.D}}</p>
+          </div></td>
+          <td>{{data.answer}}</td>
+      </tr> 
+ </table>    -->
+
+  </div>
+</div>
+
+<div *ngIf="!hide" class="text-dark">
+  <div class="lead text-center text-danger">
+   <h2> Result:{{correct/total*100}}%</h2>
+  </div>
+  <div>
+    <div *ngIf="checkedAnswer.length > 0">
+      <div *ngFor="let data of datas; index as i" >
+      <div>Question: {{data.question}}</div>
+      <div>  A: {{data.options.A}}</div>
+      <div>  B: {{data.options.B}}</div>
+      <div>  C: {{data.options.C}}</div>
+      <div>  D: {{data.options.D}}</div>
+      <div>  Answer: {{data.answer}}</div>
+   
+      <div *ngIf="data.answer === checkedAnswer[i]; else other_content">
+        <div>
+          <font color="green">Correct answer:{{data.answer}}</font>
+        </div>        
+      </div>
+      <ng-template #other_content>
+        <font color="red">Incorrent Answer: {{checkedAnswer[i]}}</font>
+      </ng-template>
+      <br>
+
+      <hr/>
+      </div>
+    </div>
+
+
+    
+    
+  </div>
+</div>

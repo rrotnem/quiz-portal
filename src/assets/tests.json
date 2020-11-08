@@ -1,0 +1,137 @@
+{
+    "bootstrap": [
+        {
+            "id": 1,
+            "question": "Which of the following is correct about Bootstrap Media Query?",
+            "options": 
+                {
+                    "A": "Media query is a really fancy term for conditional CSS rule",
+                    "B": " It simply applies some CSS, based on certain conditions set forth. If those conditions are met, the style is applied",
+                    "C": "Both of the above",
+                    "D": "None of the above"
+                }
+            ,
+            "answer": "C"
+        },
+        {
+            "id": 2,
+            "question": "Which class creates a list of items?",
+            "options": 
+                {
+                    "A": "Lst-group",
+                    "B": "List-group",
+                    "C": "Menu-group",
+                    "D": "List-grp"
+                }
+            ,
+            "answer": "B"
+        },
+        {
+            "id": 3,
+            "question": "What is Glyphicons used for",
+            "options": 
+                {
+                    "A": "using different icons like badge",
+                    "B": "using slideshow",
+                    "C": "using for animation",
+                    "D": "using for favion"
+                }
+            ,
+            "answer": "A"
+        },
+        {
+            "id": 4,
+            "question": "what is the font size of <h4>?",
+            "options": 
+                {
+                    "A": "30px",
+                    "B": "<small>",
+                    "C": "18px",
+                    "D": "24px"
+                }
+            ,
+            "answer": "D"
+        },
+        {
+            "id": 5,
+            "question": "what is a definition list's class in bootstrap",
+            "options": 
+                {
+                    "A": "list-item",
+                    "B": "dd",
+                    "C": "list-inline",
+                    "D": "dl-horizontal"
+                }
+            ,
+            "answer": "D"
+        },
+        {
+            "id": 6,
+            "question": "What style does class 'img-responsive' apply? ",
+            "options": 
+                {
+                    "A": "disply:block; max-width:100%; height:auto;",
+                    "B": "display:none; width:auto; height:auto;",
+                    "C": "border: 1; width: 100%; height: auto;",
+                    "D": "None of the above"
+                }
+            ,
+            "answer": "A"
+        },
+        {
+            "id": 7,
+            "question": "Which of the following classes styles a table as a basic table with stripes on rows?",
+            "options": 
+                {
+                    "A": ".table-hover",
+                    "B":".table-striped",
+                    "C": ".table",
+                    "D": ".table-bordered"
+                }
+            ,
+            "answer": "B"
+        },
+        {
+            "id": 8,
+            "question": "Which of the following is true about Bootstrap help text?",
+            "options": 
+                {
+                    "A": "to add width block of content, use, .help-block after the <input>",
+                    "B": "Bootstrap form controls can have a block-level help text that flows with the inputs",
+                    "C": "Both of the above",
+                    "D": "None of the above"
+                }
+            ,
+            "answer": "C"
+        },
+        {
+            "id": 9,
+            "question": "Which of the following Bootstrap button styles makes the button size extra small?",
+            "options": 
+                {
+                    "A": ".btn-xs",
+                    "B": ".btn-sm",
+                    "C": ".btn-lg",
+                    "D": ".btn-block"
+                }
+            ,
+            "answer": "A"
+        },
+        {
+            "id": 10,
+            "question": "The Bootstrap grid system is based on how many columns?",
+            "options": 
+                {
+                    "A": "10",
+                    "B": "14",
+                    "C": "12",
+                    "D": "8"
+                }
+            ,
+            "answer": "C"
+        }
+
+        
+
+    ]
+}
