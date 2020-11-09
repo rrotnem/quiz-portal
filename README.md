@@ -23,6 +23,9 @@ Home Page
 Test Page --- including a timer and a test form
 ![test page](https://github.com/rrotnem/quiz-portal/blob/master/image/testpage.PNG?raw=true)
 
+Test Result Page
+![Restult Page](https://github.com/rrotnem/quiz-portal/blob/master/image/testresult.PNG?raw=true)
+
 
 
 
