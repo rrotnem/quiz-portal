@@ -18,7 +18,8 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 Run 'json-server tests.json' at command window under the file assets for run tests json sever for data service.
 
 ## Image
-https://github.com/rrotnem/quiz-portal/blob/master/image/homepage.PNG?raw=true
+![Home Page](https://github.com/rrotnem/quiz-portal/blob/master/image/homepage.PNG?raw=true)
+
 
 
 
