@@ -13,14 +13,21 @@ Run `ng generate component component-name` to generate a new component. You can 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Serve 
 
-## Running unit tests
+Run 'json-server tests.json' at command window under the file assets for run tests json sever for data service.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Screenshot
+Home Page
+![Home Page](https://github.com/rrotnem/quiz-portal/blob/master/image/homepage.PNG?raw=true)
+Test Page --- including a timer and a test form
+![test page](https://github.com/rrotnem/quiz-portal/blob/master/image/testpage.PNG?raw=true)
 
-## Running end-to-end tests
+Test Result Page
+![Restult Page](https://github.com/rrotnem/quiz-portal/blob/master/image/testresult.PNG?raw=true)
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+
+
 
 ## Further help
 
